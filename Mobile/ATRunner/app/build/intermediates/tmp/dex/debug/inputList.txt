@@ -1,0 +1,6 @@
+C:\Users\stratmann\Downloads\ATRunner\app\build\intermediates\classes\debug
+C:\Users\stratmann\Downloads\ATRunner\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-73f816dd16f6b0a6dd053e370e2c00e67b3236c7.jar
+C:\Users\stratmann\Downloads\ATRunner\app\build\intermediates\pre-dexed\debug\uiautomator-277746239c3c00528f10e245ea91f12caac96ee1.jar
+C:\Users\stratmann\Downloads\ATRunner\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-be6f410e2f742a059ad2ff4703028fc471e10592.jar
+C:\Users\stratmann\Downloads\ATRunner\app\build\intermediates\pre-dexed\debug\classes-0133e4ca2891dc66a9f9c68cbae62957c034a4d5.jar
+C:\Users\stratmann\Downloads\ATRunner\app\build\intermediates\pre-dexed\debug\classes-59e4370543acf4a15b95c2efdad0f4ae132907f9.jar

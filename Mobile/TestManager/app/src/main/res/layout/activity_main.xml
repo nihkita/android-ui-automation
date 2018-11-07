@@ -1,0 +1,159 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:id="@+id/R">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Perk Email Address:"
+        android:id="@+id/_textViewPerkEmailAddress"
+        android:layout_alignBottom="@+id/_editTextPerkEmailAddress"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/_editTextPerkEmailAddress"
+        android:layout_gravity="bottom"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/_textViewPerkEmailAddress"
+        android:layout_toEndOf="@+id/_textViewPerkEmailAddress" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Perk Password:"
+        android:id="@+id/_textViewPerkPassword"
+        android:layout_above="@+id/_editTextStartingHour"
+        android:layout_toLeftOf="@+id/_editTextPerkPassword"
+        android:layout_toStartOf="@+id/_editTextPerkPassword"
+        android:layout_marginBottom="10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/_editTextPerkPassword"
+        android:layout_gravity="bottom"
+        android:inputType="textVisiblePassword"
+        android:layout_below="@+id/_editTextPerkEmailAddress"
+        android:layout_toRightOf="@+id/_textViewPerkEmailAddress"
+        android:layout_toEndOf="@+id/_textViewPerkEmailAddress" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Starting Hour:"
+        android:id="@+id/_textViewStartingHour"
+        android:layout_above="@+id/_editTextEndingHour"
+        android:layout_toLeftOf="@+id/_editTextStartingHour"
+        android:layout_toStartOf="@+id/_editTextStartingHour"
+        android:layout_marginBottom="10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/_editTextStartingHour"
+        android:layout_gravity="bottom"
+        android:layout_below="@+id/_editTextPerkPassword"
+        android:layout_alignLeft="@+id/_editTextPerkPassword"
+        android:layout_alignStart="@+id/_editTextPerkPassword"
+        android:inputType="number" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Ending Hour:"
+        android:id="@+id/_textViewEndingHour"
+        android:layout_alignBottom="@+id/_editTextEndingHour"
+        android:layout_toLeftOf="@+id/_editTextEndingHour"
+        android:layout_toStartOf="@+id/_editTextEndingHour"
+        android:layout_marginBottom="10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/_editTextEndingHour"
+        android:layout_gravity="bottom"
+        android:inputType="number"
+        android:layout_below="@+id/_editTextStartingHour"
+        android:layout_alignLeft="@+id/_editTextStartingHour"
+        android:layout_alignStart="@+id/_editTextStartingHour" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Points Limit:"
+        android:id="@+id/_textViewPointsLimit"
+        android:layout_alignBottom="@+id/_editTextPointsLimit"
+        android:layout_toLeftOf="@+id/_editTextPointsLimit"
+        android:layout_toStartOf="@+id/_editTextPointsLimit"
+        android:layout_marginBottom="10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/_editTextPointsLimit"
+        android:layout_below="@+id/_editTextEndingHour"
+        android:layout_alignRight="@+id/_editTextEndingHour"
+        android:layout_alignEnd="@+id/_editTextEndingHour"
+        android:layout_alignLeft="@+id/_editTextEndingHour"
+        android:layout_alignStart="@+id/_editTextEndingHour" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:id="@+id/_buttonStart"
+        android:onClick="start"
+        android:enabled="true"
+        android:clickable="true"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/_editTextPointsLimit"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        android:id="@+id/_buttonStop"
+        android:onClick="stop"
+        android:enabled="false"
+        android:clickable="true"
+        android:layout_below="@+id/_buttonStart"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="v2.1.5"
+        android:id="@+id/_textViewVersion"
+        android:layout_below="@+id/_buttonStop"
+        android:layout_alignRight="@+id/_buttonStop"
+        android:layout_alignEnd="@+id/_buttonStop" />
+
+</RelativeLayout>
